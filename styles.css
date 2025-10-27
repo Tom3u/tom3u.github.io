@@ -537,15 +537,15 @@ h3 {
 }
 
 .personaje-img {
-    height: 200px;
     overflow: hidden;
+    text-align: center;
 }
 
 .personaje-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
     transition: var(--transition);
+    display: inline-block;
 }
 
 .personaje:hover .personaje-img img {
