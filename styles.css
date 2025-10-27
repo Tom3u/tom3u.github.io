@@ -1,5 +1,3 @@
-[file name]: styles.css
-           [file content begin]
 /* Variables de colores */
 :root {
     --primary: #e67e22;
@@ -540,20 +538,22 @@ h3 {
 
 /* MODIFICACIÓN: Imágenes de personajes con tamaño natural */
 .personaje-img {
-    height: auto; /* Cambiar de altura fija a automática */
-    overflow: visible; /* Cambiar de hidden a visible */
-    text-align: center; /* Centrar la imagen */
+    height: auto;
+    overflow: visible;
+    text-align: center;
+    padding: 15px;
 }
 
 .personaje-img img {
-    width: 100%; /* Mantener el ancho completo */
-    height: auto; /* Altura automática para mantener proporción */
-    object-fit: contain; /* Cambiar de cover a contain para mostrar imagen completa */
-    max-height: 250px; /* Altura máxima para consistencia */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+    border-radius: 8px;
 }
 
 .personaje:hover .personaje-img img {
-    transform: scale(1.05); /* Mantener el efecto de hover */
+    transform: scale(1.05);
 }
 
 .personaje-info {
@@ -1158,4 +1158,3 @@ footer {
 .video-container video {
     border: none;
 }
-[file content end]
