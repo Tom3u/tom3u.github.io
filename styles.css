@@ -1158,3 +1158,314 @@ footer {
 .video-container video {
     border: none;
 }
+/* Estilos para móviles - Añadir al final del archivo CSS */
+
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 10px 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .sidebar ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+        justify-content: flex-start;
+    }
+    
+    .sidebar li {
+        margin: 0 3px;
+        flex-shrink: 0;
+    }
+    
+    .sidebar a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        border-radius: 20px;
+        white-space: nowrap;
+    }
+    
+    .sidebar a i {
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+    
+    .container {
+        margin-top: 120px;
+        padding: 0 15px;
+    }
+    
+    .pagina {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+        margin: 20px 0 12px;
+    }
+    
+    .hero-section {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .highlight {
+        font-size: 1.3rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .historia {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .number {
+        font-size: 2rem;
+    }
+    
+    .featured-types,
+    .bey-types-grid,
+    .personajes-grid,
+    .estrategias-grid,
+    .piezas-grid,
+    .intros-grid,
+    .reglas-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .featured-type,
+    .bey-type,
+    .personaje,
+    .estrategia-tipo,
+    .pieza,
+    .intro-item,
+    .regla-sistema {
+        padding: 20px 15px;
+    }
+    
+    .type-icon i,
+    .featured-type i {
+        font-size: 2.5rem;
+    }
+    
+    .personaje-img img {
+        max-height: 150px;
+    }
+    
+    .form-container {
+        padding: 20px 15px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 16px; /* Previene zoom en iOS */
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .submit-btn, .reset-btn {
+        width: 100%;
+        padding: 12px 20px;
+        justify-content: center;
+    }
+    
+    .launch-section {
+        padding: 20px 15px;
+        margin: 20px 0;
+    }
+    
+    .video-container {
+        padding-bottom: 56.25%;
+    }
+    
+    .intros-table-container {
+        margin: 20px 0;
+    }
+    
+    .serie-name,
+    .video-cell {
+        padding: 15px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    footer {
+        padding: 30px 0 15px;
+        margin-top: 30px;
+    }
+    
+    .footer-bottom {
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 8px 10px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .sidebar a {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .sidebar a i {
+        font-size: 0.9rem;
+        margin-right: 3px;
+    }
+    
+    .container {
+        margin-top: 110px;
+        padding: 0 10px;
+    }
+    
+    .pagina {
+        padding: 15px 10px;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .highlight {
+        font-size: 1.1rem;
+    }
+    
+    .historia {
+        padding: 15px;
+    }
+    
+    .featured-type,
+    .bey-type,
+    .personaje,
+    .estrategia-tipo,
+    .pieza,
+    .intro-item,
+    .regla-sistema {
+        padding: 15px 10px;
+    }
+    
+    .form-container {
+        padding: 15px 10px;
+    }
+    
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Mejoras de usabilidad táctil */
+@media (hover: none) and (pointer: coarse) {
+    .sidebar a,
+    .featured-type,
+    .bey-type,
+    .personaje,
+    .estrategia-tipo,
+    .pieza,
+    .intro-item,
+    .submit-btn,
+    .reset-btn {
+        transition: none;
+    }
+    
+    .sidebar a:active,
+    .featured-type:active,
+    .bey-type:active,
+    .personaje:active,
+    .estrategia-tipo:active,
+    .pieza:active,
+    .intro-item:active {
+        transform: scale(0.98);
+        opacity: 0.9;
+    }
+}
+
+/* Prevenir zoom en inputs en iOS */
+@media (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px;
+    }
+}
+
+/* Scroll suave para navegación móvil */
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
