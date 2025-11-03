@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Bey - La Wiki Chafa de Beyblade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo">
+        <img src="elements%20multimedia/logo.jpg" alt="logo" width="50" height="50">
+        <span>Archivo Bey</span>
+    </div>
+    <ul>
+        <li><a onclick="mostrarPagina('menu-principal')" class="nav-link active">
+            <i class="fas fa-home"></i> Menú Principal
+        </a></li>
+        <li><a onclick="mostrarPagina('personajes')" class="nav-link">
+            <i class="fas fa-users"></i> Personajes
+        </a></li>
+        <li><a onclick="mostrarPagina('tipos')" class="nav-link">
+            <i class="fas fa-cogs"></i> Tipos
+        </a></li>
+        <li><a onclick="mostrarPagina('piezas')" class="nav-link">
+            <i class="fas fa-puzzle-piece"></i> Piezas
+        </a></li>
+        <li><a onclick="mostrarPagina('intros')" class="nav-link">
+            <i class="fas fa-play-circle"></i> Intros
+        </a></li>
+        <li><a onclick="mostrarPagina('reglas')" class="nav-link">
+            <i class="fas fa-book"></i> Reglas
+        </a></li>
+        <li><a onclick="mostrarPagina('contacto')" class="nav-link">
+            <i class="fas fa-envelope"></i> Contacto
+        </a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="content">
+        <!-- Página principal -->
+        <div id="menu-principal" class="pagina active">
+            <div class="hero-section">
+                <h1>Archivo Bey <span class="highlight">La Wiki de los Beyblades</span></h1>
+                <p class="tagline">Descubre todo sobre el emocionante mundo de los Beyblades</p>
+            </div>
+
+            <div class="historia">
+                <h2><i class="fas fa-history"></i> Historia de Beyblade</h2>
+                <p>Beyblade nació en Japón en 1999, creado por Takara y Takao Aoki, inspirado en el antiguo juego de trompos japonés llamado beigoma, con la idea de crear juguetes de peonza modernos y con mayor rendimiento para combates.</p>
+
+                <p>La popularidad del juguete se impulsó con la serie de manga y anime que se lanzó para promocionar los primeros beyblades, como Spin Dragoon.</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number">1999</span>
+                        <span class="label">Año de creación</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">4</span>
+                        <span class="label">Sagas principales</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">100+</span>
+                        <span class="label">Personajes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-section">
+                <h2><i class="fas fa-fire"></i> Tipos Destacados</h2>
+                <div class="featured-types">
+                    <div class="featured-type ataque">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Ataque</h3>
+                        <p>Especializados en ofensiva directa</p>
+                    </div>
+                    <div class="featured-type defensa">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Defensa</h3>
+                        <p>Diseñados para resistir ataques</p>
+                    </div>
+                    <div class="featured-type resistencia">
+                        <i class="fas fa-hourglass-half"></i>
+                        <h3>Resistencia</h3>
+                        <p>Enfocados en duración de giro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de personajes -->
+        <div id="personajes" class="pagina">
+            <h1><i class="fas fa-users"></i> Personajes de Beyblade</h1>
+            <div class="saga">
+                <h2 class="saga-title"><i class="fas fa-metal"></i> Beyblade Metal Fight</h2>
+                <div class="personajes-grid">
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Gingka Hagane</h3>
+                            <span class="bey-name">Pegasus</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/gingka.jpeg" alt="Gingka Hagane">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Ataque</p>
+                            <p><strong>Habilidad especial:</strong> Supernova Cósmica</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Kenta Yumiya</h3>
+                            <span class="bey-name">Sagitario</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/kenta.jpeg" alt="Kenta Yumiya">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Resistencia</p>
+                            <p><strong>Habilidad especial:</strong> Garra llameante</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Kyoya Tategami</h3>
+                            <span class="bey-name">Leone</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/kyoya.jpeg" alt="Kyoya Tategami">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Equilibrio</p>
+                            <p><strong>Habilidad especial:</strong> Rugido del León</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Ryuga</h3>
+                            <span class="bey-name">L-Drago</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/ryuga.jpeg" alt="Ryuga">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Ataque</p>
+                            <p><strong>Habilidad especial:</strong> Golpe mordida voladora del emperador dragón</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Julian Konzern</h3>
+                            <span class="bey-name">Perseus</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/julian.jpg" alt="Julian Konzern">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Defensa</p>
+                            <p><strong>Habilidad especial:</strong> Excálibur negra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saga">
+                <h2 class="saga-title"><i class="fas fa-burst"></i> Beyblade Burst</h2>
+                <div class="personajes-grid">
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Valt Aoi</h3>
+                            <span class="bey-name">Valkyrie</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/valt.jpeg" alt="Valt Aoi">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Ataque</p>
+                            <p><strong>Habilidad especial:</strong> Ataque Vortex</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Shu Kurenai</h3>
+                            <span class="bey-name">Spriggan</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/shu.jpg" alt="Shu Kurenai">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Equilibrio</p>
+                            <p><strong>Habilidad especial:</strong> Cambio de Modo</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Aiger Akabane</h3>
+                            <span class="bey-name">Aquiles</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/aiger.jpeg" alt="Aiger Akabane">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Ataque</p>
+                            <p><strong>Habilidad especial:</strong> Z-Max</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Free De La Hoya</h3>
+                            <span class="bey-name">Fafnir</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/free.jpeg" alt="Free De La Hoya">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Resistencia</p>
+                            <p><strong>Habilidad especial:</strong> Salto al abismo</p>
+                        </div>
+                    </div>
+                    <div class="personaje">
+                        <div class="personaje-header">
+                            <h3>Lui Shirosagi</h3>
+                            <span class="bey-name">Longinus</span>
+                        </div>
+                        <div class="personaje-img">
+                            <img src="elements%20multimedia/lui.webp" alt="Lui Shirosagi">
+                        </div>
+                        <div class="personaje-info">
+                            <p><strong>Tipo:</strong> Ataque</p>
+                            <p><strong>Habilidad especial:</strong> Espiral perdida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de tipos -->
+        <div id="tipos" class="pagina">
+            <h1><i class="fas fa-cogs"></i> Tipos de Beyblades</h1>
+
+            <p class="intro-text">Hay cuatro tipos de beyblades principales con sus características particulares. Cada tipo tiene fortalezas y debilidades específicas que determinan su estrategia de combate.</p>
+
+            <div class="bey-types-grid">
+                <div class="bey-type ataque">
+                    <div class="type-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h2>Tipo Ataque</h2>
+                    <p>Son pesados y con puntos de contacto marcados. No suelen girar mucho tiempo pero tienen un poder ofensivo devastador.</p>
+                    <div class="type-stats">
+                        <div class="stat">
+                            <span class="stat-label">Poder</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Resistencia</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Velocidad</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bey-type defensa">
+                    <div class="type-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2>Tipo Defensa</h2>
+                    <p>Son bajos para mayor estabilidad, suelen tener cierto nivel de relieve para devolver golpes y destacan por su estabilidad.</p>
+                    <div class="type-stats">
+                        <div class="stat">
+                            <span class="stat-label">Poder</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Resistencia</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Velocidad</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bey-type resistencia">
+                    <div class="type-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h2>Tipo Resistencia</h2>
+                    <p>Son redondos con algunos relieves para desviar los golpes y destacan por su tiempo de giro.</p>
+                    <div class="type-stats">
+                        <div class="stat">
+                            <span class="stat-label">Poder</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Resistencia</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Velocidad</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bey-type equilibrio">
+                    <div class="type-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h2>Tipo Equilibrio</h2>
+                    <p>Mezclan características de los otros tres tipos. Suelen poder cambiar de trayectoria por sus puntas específicas.</p>
+                    <div class="type-stats">
+                        <div class="stat">
+                            <span class="stat-label">Poder</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Resistencia</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Velocidad</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="elements%20multimedia/tipos.png" alt="Tipos de beyblades">
+            </div>
+
+            <h1 class="strategies-title"><i class="fas fa-chess"></i> Estrategias por Tipo</h1>
+
+            <div class="estrategias-grid">
+                <div class="estrategia-tipo">
+                    <h3><i class="fas fa-bolt"></i> Estrategias para Tipo Ataque</h3>
+                    <ul>
+                        <li>Ataque pesado (one hit)</li>
+                        <li>Ataque estacionario</li>
+                        <li>Ataque en círculos</li>
+                        <li>Estrategia de emboscada</li>
+                    </ul>
+                </div>
+
+                <div class="estrategia-tipo">
+                    <h3><i class="fas fa-shield-alt"></i> Estrategias para Tipo Defensa</h3>
+                    <ul>
+                        <li>Defensa counter</li>
+                        <li>Defensa móvil</li>
+                        <li>Defensa de resistencia</li>
+                        <li>Estrategia de pared</li>
+                    </ul>
+                </div>
+
+                <div class="estrategia-tipo">
+                    <h3><i class="fas fa-hourglass-half"></i> Estrategias para Tipo Resistencia</h3>
+                    <ul>
+                        <li>Resistencia pesada</li>
+                        <li>Ecualización de giro</li>
+                        <li>Estrategia de supervivencia</li>
+                        <li>Desgaste del oponente</li>
+                    </ul>
+                </div>
+
+                <div class="estrategia-tipo">
+                    <h3><i class="fas fa-balance-scale"></i> Estrategias para Tipo Equilibrio</h3>
+                    <ul>
+                        <li>Cambio de modo</li>
+                        <li>Equilibrio puro</li>
+                        <li>Estrategia adaptativa</li>
+                        <li>Contraataque táctico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de piezas -->
+        <div id="piezas" class="pagina">
+            <h1><i class="fas fa-puzzle-piece"></i> Partes de un Beyblade</h1>
+
+            <div class="saga-piezas">
+                <h2 class="saga-title burst"><i class="fas fa-burst"></i> Para la saga de Burst</h2>
+                <div class="piezas-grid">
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Blade</h3>
+                        <p>Parte superior de plástico que define los puntos de contacto y el sentido del giro.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <h3>Disco</h3>
+                        <p>Parte intermedia de metal que define el peso, el balance y los giros finales.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <h3>Driver</h3>
+                        <p>Parte inferior de plástico que determina el movimiento del beyblade y su tiempo de giro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saga-piezas">
+                <h2 class="saga-title metal"><i class="fas fa-metal"></i> Para la saga de Metal Fight</h2>
+                <div class="piezas-grid">
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-screwdriver"></i>
+                        </div>
+                        <h3>Face</h3>
+                        <p>El tornillo de plástico (o metal en algunos modelos) con un diseño gráfico que mantiene unidas las partes superiores del Beyblade.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3>Energy Ring</h3>
+                        <p>Un aro de plástico que se sitúa sobre el Disco de Fusión y ayuda a distribuir el peso y el ataque.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>Fusion Wheel</h3>
+                        <p>La pieza metálica principal que determina la mayor parte del peso y el potencial de ataque o defensa del Beyblade.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-ruler-vertical"></i>
+                        </div>
+                        <h3>Track</h3>
+                        <p>El eje que determina la altura del Beyblade y a menudo incluye características especiales para defensa u ofensiva.</p>
+                    </div>
+                    <div class="pieza">
+                        <div class="pieza-icon">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Tip</h3>
+                        <p>La punta que toca el suelo y determina cómo se mueve el Beyblade, su equilibrio y su resistencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de intros -->
+        <div id="intros" class="pagina">
+            <h1><i class="fas fa-play-circle"></i> Intros de Beyblade</h1>
+            <p class="intro-text">Revive las mejores introducciones de todas las sagas de Beyblade</p>
+
+            <div class="intros-table-container">
+                <table class="intros-table">
+                    <thead>
+                    <tr>
+                        <th>Serie</th>
+                        <th>Intro</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-tv"></i> Beyblade Original (2000)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/19qpqjebafg?si=gyUBhRxZJedh2-3P"
+                                        title="Beyblade Original Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-metal"></i> Beyblade Metal Fight (2008)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/TyuQw33kqcU?si=5GA7UR4mZGPHhQqN"
+                                        title="Beyblade Metal Fight Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-burst"></i> Beyblade Burst (2015)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/sqHpc_A0cdE?si=IDw4uLYf5FmaA3hX"
+                                        title="Beyblade Burst Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-burst"></i> Beyblade Burst Evolution (2016)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/TGywiArffRQ?si=oikGIxwBOo2W8NmJ"
+                                        title="Beyblade Burst Evolution Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-burst"></i> Beyblade Burst Turbo (2018)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/w549t85naFE?si=4G-i_zPZjArdtsJV"
+                                        title="Beyblade Burst Turbo Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="serie-name">
+                            <h3><i class="fas fa-burst"></i> Beyblade x (2023)</h3>
+                        </td>
+                        <td class="video-cell">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/d-k8FdB-SU8?si=gAeH4SO-FnNT5ecn"
+                                        title="Beyblade X Opening"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Página de contacto -->
+        <div id="contacto" class="pagina">
+            <h1><i class="fas fa-envelope"></i> Formulario de Contacto</h1>
+
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2><i class="fas fa-comments"></i> ¡Envíanos tus comentarios!</h2>
+                    <p>¿Tienes sugerencias, preguntas o quieres compartir tu experiencia con Beyblade? Completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+                </div>
+
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="nombre"><i class="fas fa-user"></i> Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Correo electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu.correo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentario"><i class="fas fa-comment"></i> Comentario</label>
+                        <textarea id="comentario" name="comentario" rows="5" required placeholder="Escribe tus comentarios, sugerencias o preguntas aquí..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn" onclick="mostrarMensaje()">
+                            <i class="fas fa-paper-plane"></i> Enviar Comentario
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            <i class="fas fa-undo"></i> Limpiar Formulario
+                        </button>
+                    </div>
+                </form>
+
+                <div id="mensaje-exito" class="mensaje-exito" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>¡Gracias por tu comentario!</h3>
+                    <p>Hemos recibido tu mensaje correctamente. Te contactaremos pronto si es necesario.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistema de puntos  -->
+        <div id="reglas" class="pagina">
+            <h1><i class="fas fa-book"></i> Reglas y Sistema de Puntos</h1>
+
+            <div class="launch-section">
+                <h2><i class="fas fa-volume-up"></i> ¡Lanza tu Beyblade!</h2>
+                <p>Reproduce el grito para lanzar el beyblade:</p>
+
+                <!-- Audio directamente visible -->
+                <audio controls>
+                    <source src="elements%20multimedia/let-it-rip-beyblade.mp3" type="audio/mpeg">
+                    <source src="elements%20multimedia/let-it-rip-beyblade.ogg" type="audio/ogg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+
+            <div class="reglas-container">
+                <div class="regla-sistema">
+                    <h2 class="sistema-title"><i class="fas fa-metal"></i> Sistema MF, 4D y Zero-G</h2>
+                    <div class="reglas-list">
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Gana el primero en conseguir la cantidad de puntos acordada</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Ambos beyblades deben ser lanzados a la vez</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Solo se pueden usar piezas oficiales a no ser que se diga de forma explícita lo contrario</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Se deberá jugar en un estadio oficial</p>
+                        </div>
+                    </div>
+                    <h3 class="puntos-title"><i class="fas fa-star"></i> Sistema de Puntos</h3>
+                    <div class="puntos-list">
+                        <div class="punto">
+                            <span class="punto-valor">1 punto</span>
+                            <span class="punto-desc">por girar más tiempo que el rival</span>
+                        </div>
+                        <div class="punto">
+                            <span class="punto-valor">2 puntos</span>
+                            <span class="punto-desc">por sacar al rival del estadio de juego</span>
+                        </div>
+                        <div class="nota">
+                            <p><strong>Nota:</strong> Si ambos dejan de girar al mismo tiempo o salen del estadio a la vez se declara empate y esa ronda no cuenta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="regla-sistema">
+                    <h2 class="sistema-title"><i class="fas fa-burst"></i> Sistema Burst</h2>
+                    <div class="reglas-list">
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Gana el primero en conseguir la cantidad de puntos acordada</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Ambos beyblades deben ser lanzados a la vez</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Solo se pueden usar piezas oficiales a no ser que se diga de forma explícita lo contrario</p>
+                        </div>
+                        <div class="regla">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Se deberá jugar en un estadio oficial</p>
+                        </div>
+                    </div>
+                    <h3 class="puntos-title"><i class="fas fa-star"></i> Sistema de Puntos</h3>
+                    <div class="puntos-list">
+                        <div class="punto">
+                            <span class="punto-valor">1 punto</span>
+                            <span class="punto-desc">por girar más tiempo que el rival</span>
+                        </div>
+                        <div class="punto">
+                            <span class="punto-valor">1 punto</span>
+                            <span class="punto-desc">por sacar al rival del estadio de juego</span>
+                        </div>
+                        <div class="punto">
+                            <span class="punto-valor">2 puntos</span>
+                            <span class="punto-desc">por desmontar al beyblade rival</span>
+                        </div>
+                        <div class="nota">
+                            <p><strong>Nota:</strong> Si ambos dejan de girar al mismo tiempo, salen del estadio a la vez o se desmontan a la vez se declara empate y esa ronda no cuenta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Botón volver arriba -->
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Archivo Bey</h3>
+            <p>La enciclopedia definitiva sobre Beyblade</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p><a href="mailto:tj.jaume.riera@gmail.com">tj.jaume.riera@gmail.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces</h3>
+            <p><a href="/politica-privacidad">Política de Privacidad</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Archivo Bey. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    function mostrarPagina(paginaId) {
+        // Ocultar todas las páginas
+        var paginas = document.getElementsByClassName('pagina');
+        for (var i = 0; i < paginas.length; i++) {
+            paginas[i].classList.remove('active');
+        }
+
+        // Mostrar la página seleccionada
+        document.getElementById(paginaId).classList.add('active');
+
+        // Actualizar navegación activa
+        var navLinks = document.querySelectorAll('.nav-link');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].classList.remove('active');
+        }
+
+        // Marcar como activo el enlace correspondiente
+        event.currentTarget.classList.add('active');
+
+        // Scroll hacia arriba
+        window.scrollTo(0, 0);
+    }
+
+    function mostrarMensaje() {
+        // Mostrar mensaje de éxito
+        document.getElementById('mensaje-exito').style.display = 'block';
+
+        // Ocultar mensaje después de 5 segundos
+        setTimeout(function() {
+            document.getElementById('mensaje-exito').style.display = 'none';
+        }, 5000);
+    }
+
+    // Botón volver arriba
+    window.addEventListener('scroll', function() {
+        var backToTop = document.getElementById('backToTop');
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    document.getElementById('backToTop').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Mostrar menú principal al cargar la página
+    window.onload = function() {
+        mostrarPagina('menu-principal');
+    }
+</script>
+</body>
+</html>
